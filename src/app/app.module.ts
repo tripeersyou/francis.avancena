@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { PlatformComponent } from './platform/platform.component';
+import { ResumeComponent } from './resume/resume.component';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { PlatformComponent } from './platform/platform.component';
     AppComponent,
     HomeComponent,
     ProjectsComponent,
-    PlatformComponent
+    PlatformComponent,
+    ResumeComponent
   ],
   imports: [
     BrowserModule,

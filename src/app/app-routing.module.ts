@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { PlatformComponent } from './platform/platform.component';
+import { ResumeComponent } from './resume/resume.component';
 
 const routes: Routes = [
   {
@@ -14,7 +15,11 @@ const routes: Routes = [
   },{
     path: 'misa-platform',
     component: PlatformComponent
+  },{
+    path: 'resume',
+    component: ResumeComponent
   }
+
 ];
 
 @NgModule({
