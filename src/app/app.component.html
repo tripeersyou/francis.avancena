@@ -1,11 +1,16 @@
-<div class="ui inverted fixed menu">
-  <a class="item">
-    <img src="https://avatars3.githubusercontent.com/u/26473858?s=400&v=4" alt="logo">    
-  </a>
-  <a routerLink="" class="item">Home</a>
-  <a routerLink="projects" class="item">Projects</a>
-  <a routerLink="resume" class="item">Résumé</a>
-  <a routerLink="misa-platform" class="item">MISA Platform</a>
+<div class="ui icon fixed menu">
+  <div class="item">
+    <i class="bars icon" onclick="$('.ui.sidebar').sidebar('toggle');" style="color: white;" id="sidebar"></i>
+  </div>
 </div>
-
+<div class="ui left sidebar inverted vertical menu">
+  <a onclick="$('.ui.sidebar').sidebar('toggle');" routerLink="" class="item">
+    <img src="https://avatars3.githubusercontent.com/u/26473858?s=400&v=4" class="ui image" style="width:30px;margin: auto;" alt="logo">
+    <p style="text-align:center;">Francis Avanceña</p>
+  </a>
+  <a onclick="$('.ui.sidebar').sidebar('toggle');" routerLink="" class="item">Home</a>
+  <a onclick="$('.ui.sidebar').sidebar('toggle');" routerLink="projects" class="item">Projects</a>
+  <a onclick="$('.ui.sidebar').sidebar('toggle');" routerLink="resume" class="item">Résumé</a>
+  <a onclick="$('.ui.sidebar').sidebar('toggle');" routerLink="misa-platform" class="item">MISA Platform</a>
+</div>
 <router-outlet></router-outlet>
